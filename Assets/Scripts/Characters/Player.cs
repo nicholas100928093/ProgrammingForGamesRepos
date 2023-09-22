@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     // Allows player body (Cube) to have physics, like gravity
     public Rigidbody player;
+    public float JumpForce = 10f;
 
     private Vector3 moveDirection;
 
@@ -25,10 +26,10 @@ public class Player : MonoBehaviour
         transform.position += speed * Time.deltaTime * moveDirection;
 
         // If the button for "Jump" is pressed, run the following
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // Makes the cube do a jumping action
-            player.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
+            player.AddForce(new Vector3(0, JumpForce, 0), ForceMode.Impulse);
         }
     }
 
