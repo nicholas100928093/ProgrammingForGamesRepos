@@ -548,6 +548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 0}
+  JumpForce: 3
 --- !u!54 &1716140282
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -573,7 +574,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1752951422
 GameObject:
